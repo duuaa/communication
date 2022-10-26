@@ -1,0 +1,21 @@
+<div class="container col-md-7">
+  <h3>hello from component two</h3>
+  <form [formGroup]="profileForm" class="m-3">
+    <label for="InputEmail">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="InputEmail"
+      formControlName="email"
+      placeholder="Enter email"
+    />
+    <label for="InputAdress">Adress</label>
+    <input
+      type="text"
+      class="form-control"
+      id="InputAdress"
+      formControlName="address"
+      placeholder="Enter adress"
+    />
+  </form>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <app-one></app-one>
+  <app-two></app-two>
+  <div class="container" *ngIf="viewMode">
+    <h3>hello from component three</h3>
+    <div class="card">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><b>First name: </b>{{this.initialInfo.user.firstName}}</li>
+        <li class="list-group-item"><b>Last name: </b>{{this.initialInfo.user.lastName}}</li>
+        <li class="list-group-item"><b>Email: </b> {{this.initialInfo.profile.email}}</li>
+        <li class="list-group-item"><b>Address: </b>{{this.initialInfo.profile.address}}</li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="container" >
+    <div class="row">
+      <div class="col text-center">
+        <button type="button" class="btn btn-success btn-lg btn-block col-md-8 "
+        (click)="save()">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
